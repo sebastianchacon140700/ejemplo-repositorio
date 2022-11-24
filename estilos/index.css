@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    display: block;
+    color: ;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.cabecera {
+    background-color: #98fb98;
+}
+
+
+.cabecera__nav__lista {
+    text-align: right;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #0000cd;
+}
+
+
+ul ul {
+    position: absolute;
+    display: none;
+    right: 0;
+    text-align: right;
+}
+
+ul ul li {
+    display: block;
+}
+
+
+ul li:hover ul {
+    display: block;
+}
+
+body {
+    padding: 10px;
+}
+
+.cabecera__nav__lista li {
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+    background-color: #48d1cc;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+
+
+
+.sub__pricipal {
+    background-color: snow;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-areas:
+        "pricipal__venta__uno principal__venta__dos"
+        "principal__venta__tres principal__venta__cuatro";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    place-content: center;
+
+}
+
+.sub__pricipal__casa {
+    background-color: snow;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-areas:
+        "pricipal__venta__uno principal__venta__dos"
+        "principal__venta__tres principal__venta__cuatro";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    place-content: center;
+}
+
+.sub__pricipal__departamentos {
+    background-color: snow;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-areas:
+        "pricipal__venta__uno principal__venta__dos"
+        "principal__venta__tres principal__venta__cuatro";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    place-content: center;
+}
+
+
+
+.sub__pricipal__alquilers {
+    background-color: snow;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-columns: 0.3fr 0.3fr;
+    grid-template-areas:
+        "pricipal__venta__uno principal__venta__tres "
+        "principal__venta__dos principal__venta__cuatro";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    place-content: center;
+}
+}
+
+
+
+
+.pricipal__venta__uno {
+    grid-area: pricipal__venta__uno;
+    margin-top: 20px;
+
+}
+
+.principal__venta__dos {
+    grid-area: principal__venta__dos;
+    margin-top: 20px;
+
+}
+
+
+.principal__venta__tres {
+    grid-area: principal__venta__tres;
+    margin-bottom: 20px;
+}
+
+.principal__venta__cuatro {
+
+    grid-area: principal__venta__cuatro;
+    margin-bottom: 20px;
+
+}
+
+.parrafo__Uno {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.precios {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    color: green;
+
+}
+
+
+.imagen__moderna {
+    width: 470px;
+    display: block;
+    object-fit: cover;
+
+}
+
+.casa__de__madera {
+    width: 500px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+}
+
+.fachada__casa__moderna {
+    width: 476px;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+
+}
+
+.departamento__moderno {
+    width: 475px;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+
+}
+
+
+
+footer {
+    background-color: #98fb98;
+    width: auto;
+    height: auto;
+}
+
+.formulario_de_solicitu {
+    font-size: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .sub__pricipal {
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-columns: 0.1fr;
+        grid-template-areas:
+            "pricipal__venta__uno"
+            "principal__venta__dos"
+            "principal__venta__tres"
+            "principal__venta__cuatro";
+        place-content: center;
+    }
+
+    .sub__pricipal__casa {
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-columns: 0.1fr;
+        grid-template-areas:
+            "pricipal__venta__uno"
+            "principal__venta__dos"
+            "principal__venta__tres"
+            "principal__venta__cuatro";
+        place-content: center;
+    }
+
+    .sub__pricipal__departamentos {
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-columns: 0.1fr;
+        grid-template-areas:
+            "pricipal__venta__uno"
+            "principal__venta__dos"
+            "principal__venta__tres"
+            "principal__venta__cuatro";
+        place-content: center;
+    }
+
+    .sub__pricipal__alquilers {
+        grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-columns: 0.1fr;
+        grid-template-areas:
+            "pricipal__venta__uno"
+            "principal__venta__dos"
+            "principal__venta__tres"
+            "principal__venta__cuatro";
+        place-content: center;
+    }
+
+
+    .casa__de__madera {
+        width: 450px;
+        height: 300px;
+        display: block;
+        object-fit: cover;
+    }
+
+
+}
